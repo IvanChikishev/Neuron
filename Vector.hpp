@@ -10,8 +10,8 @@ public:
     
     Vector();
     Vector(int size);
-    Vector(std::vector<double> values);
     Vector(double values);
+    Vector(std::vector<double> values);
     
     double& operator[](int index);
 };

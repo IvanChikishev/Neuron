@@ -19,9 +19,7 @@ public:
         int _i;
         
         public:
-        
         row(Matrix &a, int i) : _a(a),_i(i) {}
-        
         
         double& operator[](int j) {
             return _a.v[_i][j];

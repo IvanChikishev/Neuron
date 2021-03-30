@@ -9,18 +9,6 @@ Network::Network(std::vector<int> sizes) {
         this->L.push_back(LayerT(0, 0, 0));
         this->deltas.push_back(Vector());
         
-        if(((k - 1) > this->L.size() - 1) ) {
-            this->L.push_back(LayerT(0, 0, 0));
-        }
-        
-        if(((k - 1) > this->weights.size() - 1) ) {
-            this->weights.push_back(Matrix(0, 0));
-        }
-        
-        if(((k - 1) > this->deltas.size() - 1) ) {
-            this->deltas.push_back(Vector());
-        }
-        
         // пишет в массив weights
         this->weights[k - 1] = Matrix(sizes[k], sizes[k-1]);
         

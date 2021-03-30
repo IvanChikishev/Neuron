@@ -6,20 +6,14 @@
 #include <vector>
 
 struct LayerT {
-    // вход слоя
-    Vector x;
-    
-    // активированный выход слоя
-    Vector z;
-    
-    // производная функция активации слоя
-    Vector df;
-
+    Vector x; // вход слоя
+    Vector z; // активированный выход слоя
+    Vector df; // производная функция активации слоя
     
     LayerT(Vector x, Vector z, Vector df) {
         this->x = x;
-        this->df = df;
         this->z = z;
+        this->df = df;
     }
 };
 
